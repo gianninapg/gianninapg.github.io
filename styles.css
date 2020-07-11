@@ -128,6 +128,7 @@ div {
     background-color: #222222;
   }
 
+  /*  
 #div-1{
     flex-direction: column;
     flex-basis: 1;
@@ -140,6 +141,13 @@ div {
     flex-direction: column;
     background-color: #613659;
 }
+*/
+.first-row{
+ flex-direction: row;
+ flex-basis: 1;
+
+}
+
 #div-3{
     height: 200px;
     flex-basis: 1;
