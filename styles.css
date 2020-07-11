@@ -128,12 +128,31 @@ div {
     background-color: #222222;
   }
 
-  /*  
+ /* 
+
+.first-column{
+ flex-direction: row;
+ flex-basis: 1;
+
+}
+.second-column{
+    flex-direction: row;
+    flex-basis: 1;
+
+}
+*/
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: space-between;
+
+}
 #div-1{
     flex-direction: column;
     flex-basis: 1;
     align-content: flex-start;
-
 }
 #div-2{
     height: 200px;
@@ -141,13 +160,6 @@ div {
     flex-direction: column;
     background-color: #613659;
 }
-*/
-.first-row{
- flex-direction: row;
- flex-basis: 1;
-
-}
-
 #div-3{
     height: 200px;
     flex-basis: 1;
