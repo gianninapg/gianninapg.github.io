@@ -122,37 +122,40 @@ div {
     display: flex;
     flex-wrap: wrap;
     width: 20%;
-    height: 700px;
+    height: 400px;
     justify-content:space-around;
-    align-content: flex-start;
     background-color: #222222;
   }
 
- /* 
 
 .first-column{
- flex-direction: row;
  flex-basis: 1;
+ justify-content:space-around;
+ width: 300px;
+
+
 
 }
 .second-column{
-    flex-direction: row;
     flex-basis: 1;
+    justify-content:space-around;
+    width: 300px;
 
 }
-*/
+
 .skills{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-around;
-    align-content: space-between;
+    width: 70%;
 
 }
 #div-1{
     flex-direction: column;
     flex-basis: 1;
     align-content: flex-start;
+
 }
 #div-2{
     height: 200px;
@@ -165,7 +168,6 @@ div {
     flex-basis: 1;
     flex-direction: row;
     background-color: #613659;
-   
 }
 #div-4{
     height: 200px;
