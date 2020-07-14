@@ -65,15 +65,28 @@ nav {
 .first-column a:hover{
     background-color: #C197D2;
 }
-div {
-    padding: 10px;
-}
 
 footer {
     text-align: center;
     background-color: #5E366A;
     padding: 10px;
     color: #fff;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #5E366A;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+
+}
+.icon{
+    text-align: center;
+    background-color: #5E366A;
+    color: #fff;
+    display: inline-block;
+    width: 15%;
 }
 
 /* Your code here */
