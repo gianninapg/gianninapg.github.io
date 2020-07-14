@@ -161,24 +161,36 @@ div {
     flex-basis:1;
     flex-direction: column;
     background-color: #613659;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 #div-3{
     height: 200px;
     flex-basis: 1;
     flex-direction: row;
     background-color: #613659;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 #div-4{
     height: 200px;
     flex-basis: 1;
     flex-direction: row;
     background-color: #613659;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 #div-5{
     height: 200px;
     flex-basis: 1;
     flex-direction: column;
     background-color: #613659;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     
 }
 
