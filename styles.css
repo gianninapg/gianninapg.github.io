@@ -28,22 +28,36 @@ h2 {
     line-height: 3rem;
     color: #fff;
 }
+h3 {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+    color: #fff;
+}
+
 
 nav {
     margin: 10px;
     padding: 10px;
 }
 
-a {
+.nav-bar a {
     color: #D3B1C2;
     text-decoration: none;
     padding: 5px;
 }
 
-a:hover {
-    color: #94C973;
+.nav-bar a:hover {
+    color: #0CCA98;
 }
 
+.nav-bar a{
+    display: inline-block;
+}
+
+.first-column a:hover{
+    background-color: #C197D2;
+}
 div {
     padding: 10px;
 }
@@ -57,33 +71,25 @@ img {
 
 footer {
     text-align: center;
-    background-color: #C197D2;
+    background-color: #5E366A;
     padding: 10px;
     color: #fff;
 }
 
 /* Your code here */
 
-nav a{
-    display: inline-block;
-}
-
-
-#cupcake1{
-    width:300px;
-    Height:200px;  
-}
 
 header{
 margin: 10px;
 padding: 10px;
 
 }
-
+/*  
 * {
     border: 2px solid #fff;
     margin: 5px;
 }
+*/
 
 html {
     height: calc(100% - 14px);
@@ -121,9 +127,11 @@ div {
 .bio {
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
+    width: 25%;
     justify-content:space-evenly;
     background-color: #222222;
+    float: left;
+    padding: 15px 15px 15px 15px;
   }
 
 
@@ -146,8 +154,10 @@ div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:center;
+    align-items: center;
     width: 70%;
+    align-self: center;
 
 }
 #div-1{
@@ -160,37 +170,43 @@ div {
     height: 200px;
     flex-basis:1;
     flex-direction: column;
-    background-color: #613659;
+    background-color: #331940;
     align-items: center;
     display: flex;
     justify-content: center;
+    color: #0CCA98;
+    margin-bottom: 10px;
 }
 #div-3{
     height: 200px;
     flex-basis: 1;
     flex-direction: row;
-    background-color: #613659;
+    background-color: #331940;
     align-items: center;
     display: flex;
     justify-content: center;
+    color: #0CCA98;
 }
 #div-4{
     height: 200px;
     flex-basis: 1;
     flex-direction: row;
-    background-color: #613659;
+    background-color: #331940;
     align-items: center;
     display: flex;
     justify-content: center;
+    color: #0CCA98;
+    margin-bottom: 10px;
 }
 #div-5{
     height: 200px;
     flex-basis: 1;
     flex-direction: column;
-    background-color: #613659;
+    background-color: #331940;
     align-items: center;
     display: flex;
     justify-content: center;
+    color: #0CCA98;
     
 }
 
