@@ -178,8 +178,7 @@ div {
     justify-content: center;
     color: #0CCA98;
     margin-bottom: 10px;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-radius: 2%;
 }
 #div-3{
     height: 200px;
@@ -190,8 +189,7 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-radius: 2%;
 }
 #div-4{
     height: 200px;
@@ -203,8 +201,7 @@ div {
     justify-content: center;
     color: #0CCA98;
     margin-bottom: 10px;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-radius: 2%;
  
 }
 #div-5{
@@ -216,9 +213,7 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
-    
+    border-radius: 2%;
 }
 
 img {
@@ -249,6 +244,12 @@ p{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+    .skills{
+        align-content: center;
+        justify-content:center;
+        align-items: center;
+        
+    }
    
 }
 
@@ -300,19 +301,19 @@ p{
 @media (min-width: 1440px) {
 
    img {
-    width:  20%;
-    height: 60%;
+    width:  15%;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
     }
     .flex-container{
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .first-column{
-        width: 380px;
+        width: 450px;
+        margin-right: -20px;
     }
     .second-column{
-        width: 380px;
+        width: 450px;
     }
     .skills{
         justify-content: space-evenly;
