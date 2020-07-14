@@ -35,7 +35,7 @@ h3 {
     color: #E0E0E0;
 }
 .front-end h3{
-    ont-size: 1rem;
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2rem;
     color: #5E366A;
@@ -45,6 +45,7 @@ h3 {
 nav {
     margin: 10px;
     padding: 10px;
+    font-size: 1.2rem;
 }
 
 .nav-bar a {
@@ -66,14 +67,6 @@ nav {
 }
 div {
     padding: 10px;
-}
-
-img {
-    width: 100%;
-    height: 60px;
-    object-fit: cover;
-    object-position: bottom;
-    margin-top: 20px;
 }
 
 footer {
@@ -171,6 +164,8 @@ div {
     flex-direction: column;
     flex-basis: 1;
     align-content: flex-start;
+    border-top-right-radius: 6%;
+    border-top-left-radius: 6%;
 
 }
 #div-2{
@@ -183,6 +178,8 @@ div {
     justify-content: center;
     color: #0CCA98;
     margin-bottom: 10px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
 }
 #div-3{
     height: 200px;
@@ -193,6 +190,8 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
 }
 #div-4{
     height: 200px;
@@ -204,6 +203,9 @@ div {
     justify-content: center;
     color: #0CCA98;
     margin-bottom: 10px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+ 
 }
 #div-5{
     height: 200px;
@@ -214,6 +216,8 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
     
 }
 
@@ -223,6 +227,7 @@ img {
     padding: 10px; 
     border-radius: 50%;
     float: left;
+    margin-top: 20px;
     }
 
 p{
@@ -240,3 +245,77 @@ p{
     font-style: normal;
 }
 
+/*** Media Queries ***/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+   
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    img {
+        width:  20%;
+        height: 60%;
+        float: left;
+        margin-top: 10px;
+        }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    img {
+        width:  20%;
+        height: 60%;
+        float: left;
+        margin-top: 10px;
+        }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    img {
+        width:  20%;
+        height: 60%;
+        float: left;
+        margin-top: 10px;
+        }
+        .flex-container{
+            margin-top: 80px;
+        }
+        .first-column{
+            width: 380px;
+        }
+        .second-column{
+            width: 380px;
+        }
+        .skills{
+            justify-content: space-evenly;
+            
+        }
+}
+
+ /* MASSIVE devices (large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+
+   img {
+    width:  20%;
+    height: 60%;
+    float: left;
+    margin-top: 10px;
+    }
+    .flex-container{
+        margin-top: 80px;
+    }
+    .first-column{
+        width: 380px;
+    }
+    .second-column{
+        width: 380px;
+    }
+    .skills{
+        justify-content: space-evenly;
+        
+    }
+}
