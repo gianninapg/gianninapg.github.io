@@ -32,7 +32,13 @@ h3 {
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2rem;
-    color: #fff;
+    color: #E0E0E0;
+}
+.front-end h3{
+    ont-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+    color: #5E366A;
 }
 
 
@@ -64,9 +70,10 @@ div {
 
 img {
     width: 100%;
-    height: 60vh;
+    height: 60px;
     object-fit: cover;
     object-position: bottom;
+    margin-top: 20px;
 }
 
 footer {
@@ -219,8 +226,17 @@ img {
     }
 
 p{
+    color: #5E366A;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+.bio p{
     color: #E0E0E0;
     font-size: 0.8rem;
     font-weight: lighter;
     font-style: normal;
 }
+
