@@ -53,13 +53,12 @@ nav {
     text-decoration: none;
     padding: 5px;
 }
-
-.nav-bar a:hover {
-    color: #0CCA98;
-}
-
 .nav-bar a{
     display: inline-block;
+}
+
+.nav-bar a:active {
+    color: #0CCA98;
 }
 
 .first-column a:hover{
@@ -81,13 +80,6 @@ footer {
     display: inline-block;
 
 }
-.icon{
-    text-align: center;
-    background-color: #5E366A;
-    color: #fff;
-    display: inline-block;
-    width: 15%;
-}
 
 /* Your code here */
 
@@ -97,12 +89,6 @@ margin: 10px;
 padding: 10px;
 
 }
-/*  
-* {
-    border: 2px solid #fff;
-    margin: 5px;
-}
-*/
 
 html {
     height: calc(100% - 14px);
@@ -125,7 +111,7 @@ div {
 
 .flex-container{
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-around;
 }
@@ -141,17 +127,18 @@ div {
     display: flex;
     flex-wrap: wrap;
     width: 25%;
-    justify-content:space-evenly;
+    justify-content: flex-end;
     background-color: #222222;
     float: left;
     padding: 15px 15px 15px 15px;
+    margin-left: 45px;
   }
 
 
 .first-column{
  flex-basis: 1;
  justify-content:space-around;
- width: 300px;
+ width: 100px;
 
 
 
@@ -159,17 +146,17 @@ div {
 .second-column{
     flex-basis: 1;
     justify-content:space-around;
-    width: 300px;
+    width: 100px;
 
 }
 
 .skills{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    width: 70%;
+    width: 60%;
     align-self: center;
 
 }
@@ -202,7 +189,9 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
-    border-radius: 2%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
 #div-4{
     height: 200px;
@@ -215,7 +204,9 @@ div {
     color: #0CCA98;
     margin-bottom: 10px;
     border-radius: 2%;
- 
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%); 
 }
 #div-5{
     height: 200px;
@@ -227,6 +218,10 @@ div {
     justify-content: center;
     color: #0CCA98;
     border-radius: 2%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
+    
 }
 
 img {
@@ -236,6 +231,7 @@ img {
     border-radius: 50%;
     float: left;
     margin-top: 20px;
+    margin-left: 50px;
     }
 
 p{
@@ -252,6 +248,94 @@ p{
     font-weight: lighter;
     font-style: normal;
 }
+
+/* Fixed/sticky icon bar (vertically aligned 60% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #E0E0E0;
+    color: white;
+  }
+  
+  .twitter {
+    background: #E0E0E0;
+    color: white;
+  }
+  
+  .google {
+    background: #E0E0E0;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #E0E0E0;
+    color: white;
+  }
+ 
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  #img-accordion{
+        width:  30%;
+        height: 30%;
+        padding: 10px; 
+        border-radius: 10%;
+  }
+  #img-accordion {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    align-content: center;
+  }
+  
+  #img-accordion:hover {
+    transform: scale(5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 /*** Media Queries ***/
 
@@ -274,6 +358,16 @@ p{
         float: left;
         margin-top: 10px;
         }
+        .first-column{
+            width: 50%;
+        }
+        .second-column{
+            width: 50%;
+        }
+        .skills{
+            align-self: flex-start;
+            
+        }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -283,6 +377,12 @@ p{
         height: 60%;
         float: left;
         margin-top: 10px;
+        }
+        .first-column{
+            width: 50%;
+        }
+        .second-column{
+            width: 50%;
         }
     
 }

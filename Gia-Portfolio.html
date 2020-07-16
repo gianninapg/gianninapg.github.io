@@ -11,45 +11,55 @@
     </head>
     <body>
         <header>
+            <div>
             <img id="Giannina Portfolio" src="images/Gia-Photo.jpeg" alt="SheCodes Code Program.">
             <h1>Giannina Pacheco</h1>
             <h2>Business Analyst | Web Developer </h2>
             <nav class="nav-bar">
                 <a href="Gia-Portfolio.html">Home |</a>
                 <a href="portfolio-front-end.html"> Front End |</a>
+                <a href="portfolio.html">Portfolio |</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            </div>
         </header>
-        <div class="flex-container">
+    <div>
+        <div class="flex-container" id="container">
             <div class="bio" id="div-1">
                <h3>About Me</h3>
                <p>
-                Born in Lima, Peru. Work and volunteer experience in Peru, Panama, USA and Australia.
-               </br>
+                Born in Lima, Peru. Work and volunteer experience in Peru, Panama, USA and Australia.</br></br>
                 I am Gia, a Business Analyst working in technology with experience in projects framing and delivery, ERP systems, REST APIs, business analytics platforms, programming, gaming and more creative tech stuff. </br></br>
                 My passion for technology started back in 2011 when launching a German startup, Wimdu, in Peru. I enjoyed the virtual, dynamic and effective interaction with teams across Europe and South America, whilst working remotly and setting up a local team. </br></br>
-            </br>
-            In Australia, I completed a Masters of IT and TAFE certifications in Web development, Interactive Digital Media and Animation.
-        </br>  
-            Currently, I love working in IT and interacting with different people to deliver projects on budget. I also love travelling and hosting wine nights with my boyfriend and friends.
-            </p>
+                In Australia, I completed a Masters of IT and TAFE certifications in Web development, Interactive Digital Media and Animation.</br></br>
+                Currently, I love working in IT and interacting with different people to deliver projects on budget. I also love travelling and hosting wine nights with my boyfriend and friends.
+                </p>
             </div> 
             <div class="skills">
-            <div class="first-column">
-                <a href=portfolio-front-end.html><div class="programming" id="div-2">Front End</div></a>
-                <div class="programming" id="div-3">Python</div>
-            </div>
-            <div class="second-column">
+                <div class="first-column" id="box" nmouseover="mouseOver()" onmouseout="mouseOut()" onclick="changeColour('#f74850')" value="red">
+                    <a href=portfolio-front-end.html><div class="programming" id="div-2">Front End</div></a>
+                    <div class="programming" id="box3">Python </div>
+                </div>
+                <div class="second-column">
                 <div class="programming" id="div-4">Javascript</div>
                 <div class="programming" id="div-5">REST APIs</div>
-            </div>
+                </div>
             </div>        
         </div>
-        
+    </div>
+    <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/gianninapg" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/Gia_pg" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="contact.html" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://linkedin.com/in/gianninapacheco" class="linkedin"><i class="fa fa-linkedin"></i></a>
+</div>
         <footer>
             <div class="copyright">Giannina Pacheco | Portfolio 2020.</div>
-            <div class="icon"><a href="linkedin.com/in/gianninapacheco"><img class="social-media-icon"src="images/linkedin-icon.png" alt="linkedin-icon."></a> 
-           </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
