@@ -287,22 +287,22 @@ p{
   }
   
   .facebook {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
   
   .twitter {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
   
   .google {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
   
   .linkedin {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
  
@@ -312,6 +312,7 @@ p{
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    height: 180%;
     border: none;
     text-align: left;
     outline: none;
@@ -330,24 +331,35 @@ p{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-
-  #img-accordion{
+/* 
+  .img-accordion{
         width:  30%;
         height: 30%;
         padding: 10px; 
         border-radius: 10%;
   }
-  #img-accordion {
-    padding: 50px;
+   */
+  .img-accordion {
+    overflow: hidden;
+    padding: 10px;
     transition: transform .2s; /* Animation */
-    width: 300px;
-    height: 300px;
     margin: 0 auto;
+    width:  30%;
+    height: 30%;
+    border-radius: 2%;
     align-content: center;
+    vertical-align: middle;
   }
   
-  #img-accordion:hover {
-    transform: scale(5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  .img-accordion:hover {
+    transform: scale(1.5) /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  #img-accordion{
+    width:  30%;
+    height: 30%;
+    padding: 10px; 
+    border-radius: 10%;
+    align-content: center;
   }
 
 /*** Media Queries ***/
