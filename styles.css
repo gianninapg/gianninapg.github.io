@@ -40,6 +40,9 @@ h3 {
     line-height: 2rem;
     color: #5E366A;
 }
+.front-end {
+    height: auto;
+}
 
 
 nav {
@@ -269,24 +272,26 @@ p{
   }
   
   .facebook {
-    background: #E0E0E0;
+    background: #A9A9A9;
     color: white;
   }
   
   .twitter {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
   
   .google {
-    background: #E0E0E0;
+    background: #A9A9A9;
     color: white;
   }
   
   .linkedin {
-    background: #E0E0E0;
+    background: silver;
     color: white;
   }
+
+  /* Accordion layout on Portfolio page */
  
   .accordion {
     background-color: #eee;
@@ -294,6 +299,7 @@ p{
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    height: 180%;
     border: none;
     text-align: left;
     outline: none;
@@ -307,42 +313,99 @@ p{
   
   .panel {
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-
-  #img-accordion{
-        width:  30%;
-        height: 30%;
-        padding: 10px; 
-        border-radius: 10%;
-  }
-  #img-accordion {
-    padding: 50px;
+  .img-accordion {
+    overflow: hidden;
+    padding: 10px;
     transition: transform .2s; /* Animation */
-    width: 300px;
-    height: 300px;
     margin: 0 auto;
-    align-content: center;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
   }
   
-  #img-accordion:hover {
-    transform: scale(5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  .img-accordion:hover {
+    -webkit-transform: scale(2); /* Safari 3-8 */
+    transform: scale(2) /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+  #img-accordion{
+    padding: 20px; 
+    border-radius: 0%;
+    align-content: center;
+    display: block;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+/* Form CSS on Contact Page */
+
+  form {
+    margin: 20px auto;
+    width: 90%;
+    background-color: #E0E0E0;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 22px;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid #FDDC5C;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid #FA4224;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 2px solid #FDDC5C;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-item button:hover {
+    border: 2px solid #FA4224;
+    background-color: #FA4224;
+    color: #FFF;
+}
+
+.form-item button {
+    width: 100px;
+}
+
+
 
 /*** Media Queries ***/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    .skills{
-        align-content: center;
-        justify-content:center;
-        align-items: center;
-        
+    .form-item label {
+        flex-basis: 80px;
+        font-size: 16px;
     }
-   
+    form {
+        margin: 10px auto;
+        width: 100%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
