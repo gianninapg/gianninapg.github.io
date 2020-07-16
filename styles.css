@@ -71,7 +71,7 @@ nav {
     display: inline-block;
 }
 
-.nav-bar a:active {
+.nav-bar a:hover {
     color: #0CCA98;
 }
 
