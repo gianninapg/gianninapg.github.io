@@ -92,13 +92,6 @@ footer {
     display: inline-block;
 
 }
-.icon{
-    text-align: center;
-    background-color: #5E366A;
-    color: #fff;
-    display: inline-block;
-    width: 15%;
-}
 
 /* Your code here */
 
@@ -256,7 +249,7 @@ img {
     border-radius: 50%;
     float: left;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     }
 
 p{
@@ -333,6 +326,16 @@ p{
         float: left;
         margin-top: 10px;
         }
+        .first-column{
+            width: 50%;
+        }
+        .second-column{
+            width: 50%;
+        }
+        .skills{
+            align-self: flex-start;
+            
+        }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -342,6 +345,12 @@ p{
         height: 60%;
         float: left;
         margin-top: 10px;
+        }
+        .first-column{
+            width: 50%;
+        }
+        .second-column{
+            width: 50%;
         }
     
 }
