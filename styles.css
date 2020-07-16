@@ -59,10 +59,10 @@ nav {
 }
 
 
-*/
-a.box:hover a.box:active {
+a.box:hover + div{
     background: #0CCA98;
 }
+*/
 
 
 .nav-bar a{

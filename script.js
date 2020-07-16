@@ -1,16 +1,10 @@
-function changeColour(colour) {
-    // start
-    document.body.style.backgroundColor = colour;
-    // end
+document.getElementById("box").onmouseover = function() {mouseOver()};
+document.getElementById("box").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("box").style.background = "red";
 }
 
-function resetColour() {
-    document.body.style.backgroundColor = '#FCE166';
-}
-
-function toggleLightbulb() {
-    // start
-    let lightbulb = document.getElementById('light');
-    lightbulb.classList.toggle('on');
-    // end 
+function mouseOut() {
+  document.getElementById("box").style.background = "black";
 }
