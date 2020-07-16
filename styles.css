@@ -266,6 +266,7 @@ p{
     font-weight: lighter;
     font-style: normal;
 }
+
 /* Fixed/sticky icon bar (vertically aligned 60% from the top of the screen) */
 .icon-bar {
     position: fixed;
@@ -310,6 +311,49 @@ p{
     color: white;
   }
  
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  #img-accordion{
+        width:  30%;
+        height: 30%;
+        padding: 10px; 
+        border-radius: 10%;
+  }
+  #img-accordion {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    align-content: center;
+  }
+  
+  #img-accordion:hover {
+    transform: scale(5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 /*** Media Queries ***/
 

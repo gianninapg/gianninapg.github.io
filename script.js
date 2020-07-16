@@ -1,15 +1,14 @@
-document.getElementById("box").onmouseover = function() {mouseOver()};
-document.getElementById("box").onmouseout = function() {mouseOut()};
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-function mouseOver() {
-  document.getElementById("box").style.backgroundColor = "red";
-}
-
-function mouseOut() {
-  document.getElementById("box").style.backgroundColor = "black";
-}
-function changeColour(box) {
-    // start
-    document.body.style.backgroundColor = box;
-    // end
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
