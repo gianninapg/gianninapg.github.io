@@ -53,13 +53,24 @@ nav {
     text-decoration: none;
     padding: 5px;
 }
-
+/* 
 .nav-bar a:hover {
     color: #0CCA98;
 }
 
+
+*/
+a.box:hover a.box:active {
+    background: #0CCA98;
+}
+
+
 .nav-bar a{
     display: inline-block;
+}
+
+.nav-bar a:active {
+    color: #0CCA98;
 }
 
 .first-column a:hover{
@@ -145,6 +156,7 @@ div {
     background-color: #222222;
     float: left;
     padding: 15px 15px 15px 15px;
+    margin-left: 10px;
   }
 
 
@@ -193,6 +205,7 @@ div {
     margin-bottom: 10px;
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
 #div-3{
     height: 200px;
@@ -205,6 +218,7 @@ div {
     color: #0CCA98;
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
 #div-4{
     height: 200px;
@@ -218,7 +232,7 @@ div {
     margin-bottom: 10px;
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
- 
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%); 
 }
 #div-5{
     height: 200px;
@@ -231,6 +245,7 @@ div {
     color: #0CCA98;
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
     
 }
 
