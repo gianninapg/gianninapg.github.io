@@ -40,6 +40,9 @@ h3 {
     line-height: 2rem;
     color: #5E366A;
 }
+.front-end {
+    height: auto;
+}
 
 
 nav {
@@ -328,38 +331,33 @@ p{
   
   .panel {
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-/* 
-  .img-accordion{
-        width:  30%;
-        height: 30%;
-        padding: 10px; 
-        border-radius: 10%;
-  }
-   */
   .img-accordion {
     overflow: hidden;
     padding: 10px;
     transition: transform .2s; /* Animation */
     margin: 0 auto;
     border-radius: 2%;
-    align-content: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
   }
   
   .img-accordion:hover {
-    transform: scale(1.5) /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    -webkit-transform: scale(2); /* Safari 3-8 */
+    transform: scale(2) /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
   #img-accordion{
-    width:  30%;
-    height: 30%;
-    padding: 10px; 
-    border-radius: 10%;
+    padding: 20px; 
+    border-radius: 0%;
     align-content: center;
+    display: block;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
   }
 
 /* Form CSS on Contact Page */
@@ -418,7 +416,14 @@ p{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-   
+    .form-item label {
+        flex-basis: 80px;
+        font-size: 16px;
+    }
+    form {
+        margin: 10px auto;
+        width: 100%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
