@@ -207,7 +207,7 @@ div {
     border-top-left-radius: 10%;
     background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
-#div-3{
+#box3{
     height: 200px;
     flex-basis: 1;
     flex-direction: row;
