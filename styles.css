@@ -179,6 +179,7 @@ div {
     color: #0CCA98;
     margin-bottom: 10px;
     border-radius: 2%;
+    background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
 #div-3{
     height: 200px;
@@ -189,8 +190,7 @@ div {
     display: flex;
     justify-content: center;
     color: #0CCA98;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-radius: 2%;
     background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
 }
 #div-4{
@@ -204,8 +204,6 @@ div {
     color: #0CCA98;
     margin-bottom: 10px;
     border-radius: 2%;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
     background: linear-gradient(to bottom,  #331940,#ff99cc  200%); 
 }
 #div-5{
@@ -218,8 +216,6 @@ div {
     justify-content: center;
     color: #0CCA98;
     border-radius: 2%;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
     background: linear-gradient(to bottom,  #331940,#ff99cc  200%);
     
 }
